@@ -1,6 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 body,html{
@@ -24,6 +25,7 @@ body,html{
 }
 nav{
     background-color: #333;
+    cursor: pointer;
 
 }
 nav ul{
@@ -47,7 +49,8 @@ nav ul {
     
 } 
 nav li{
-    flex: 1 1 0;
+    flex-wrap: wrap;
+    flex: 1;
     
 }
 .logo{
@@ -65,6 +68,7 @@ nav li{
     padding: 30px;
     margin: 80px 0 80px 0;
     border-radius: 5px;
+    overflow: hidden;
     
 }
 .text h1{
@@ -152,7 +156,7 @@ nav li{
           }  
           
 .aboutmovie{
-        display: flex;
+        display: inline-flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
@@ -162,12 +166,12 @@ nav li{
         border-radius: 5px;
 }  
 .aboutmovie hr{
-    display: inline-block;
-        height: 410px;
-        margin: 0 15px ;
-        
-        
+    display: block;
+       height:fit-content;
+       height: 400px;
+        margin: 0 20px ;    
 }
+
 .aboutmovie h1{
 padding: 5px 0 5px 0 ;
 
@@ -179,25 +183,47 @@ padding: 5px 0 5px 0 ;
 .aboutmovie li {
     padding: 2px 0 2px 0;
 } 
+@media screen and (min-width:768px) {
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer hr{
+        height: auto;
+        width: 100%;
+
+    }
+}
 
 
-  
+  table,td {
+      border: 2px solid rgb(0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    
+   
+  }
+ table{
+width: 75%;
+
+
+  }
 .footer a{
     background-color: #555;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    
   
 }
 .footer-copyright {
     background-color: #555;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-        justify-content: center;
-        align-items: center;      
+    justify-content: center;
+             
 }
      
 
