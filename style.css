@@ -1,6 +1,8 @@
 *{
     margin: 0;
+    box-sizing: border-box;
 }
+
 body,html{
     
     
@@ -76,16 +78,26 @@ nav li{
     margin-bottom: 60px;
     box-sizing: border-box;
     
+    
 }
 .images-2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     object-fit: cover;
-    margin-bottom: 60px;
     box-sizing: border-box;
-    margin: 70px;
+    margin: 70px ;
+    
 
+}
+.drama{
+    margin-bottom: 10px;
+}
+.action{
+    margin-bottom: 10px;
+}
+.comedy{
+    margin-bottom: 10px;
 }
 
 .action{
@@ -140,19 +152,29 @@ nav li{
           }  
           
 .aboutmovie{
-    
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         border: 2px black solid;
         padding: 30px;
         margin: 80px 0 80px 0;
         border-radius: 5px;
 }  
+.aboutmovie hr{
+    display: inline-block;
+        height: 410px;
+        margin: 0 15px ;
+        
+        
+}
 .aboutmovie h1{
 padding: 5px 0 5px 0 ;
 
 }   
-.aboutmovie ul{
-    padding: 0;
-    list-style-type: none;
+.aboutmovie ol{
+    padding: 10px;
+    
 }  
 .aboutmovie li {
     padding: 2px 0 2px 0;
@@ -163,8 +185,8 @@ padding: 5px 0 5px 0 ;
 .footer a{
     background-color: #555;
     display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   
@@ -173,8 +195,8 @@ padding: 5px 0 5px 0 ;
     background-color: #555;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column-reverse;
-        justify-content: space-between;
+    flex-direction: row;
+        justify-content: center;
         align-items: center;      
 }
      
